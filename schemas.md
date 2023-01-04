@@ -12,3 +12,4 @@ FROM pg_catalog.pg_namespace s
 ORDER BY 1;
 ```
 
+![image](https://user-images.githubusercontent.com/926720/210604408-1be0780a-d35d-48f2-9bd5-b03d886bf9ac.png)
