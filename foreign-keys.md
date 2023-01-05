@@ -17,4 +17,4 @@ ORDER BY
   contype DESC;
 ```
 
-<img width="500" src="https://user-images.githubusercontent.com/926720/210864662-ded37c86-27c2-46aa-b4d4-613f94eb4d40.png">
+<img src="https://user-images.githubusercontent.com/926720/210864662-ded37c86-27c2-46aa-b4d4-613f94eb4d40.png">
