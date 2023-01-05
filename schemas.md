@@ -2,11 +2,12 @@
 
 ```sql
 SELECT
-  s.nspname as "schema",
-  s.oid as schema_id,
-  u.usename as "owner"
+  s.nspname AS "schema",
+  s.oid AS schema_id,
+  u.usename AS "owner"
 
-FROM pg_catalog.pg_namespace s
+FROM
+  pg_catalog.pg_namespace s
   JOIN pg_catalog.pg_user u ON u.usesysid = s.nspowner
 
 ORDER BY 1;
