@@ -2,7 +2,8 @@
 
 Identifying poorly performing queries using `pg_stat_statements`
 
-```sqlSELECT
+```sql
+SELECT
   pg_roles.rolname AS "user",
   "query",
   -- Number of times the query has been called
