@@ -21,3 +21,5 @@ WHERE pg_roles.rolname !~ '^(pg_|rds)'
 ORDER BY mean_time DESC
 LIMIT 25;
 ```
+
+<img src="https://user-images.githubusercontent.com/926720/212415855-8736310f-649d-4f8d-ab23-ebb172dc24df.png">
