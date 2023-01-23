@@ -27,9 +27,11 @@ CREATE TABLE "user" (
   "notification_type" text NOT NULL,
   "name" text NULL,
   "is_deleted" boolean NOT NULL DEFAULT FALSE,
+
   PRIMARY KEY ("id"),
   CONSTRAINT "fkey_user_notification_id" FOREIGN KEY ("notification_id") REFERENCES "notification" ("id"),
   CONSTRAINT "ukey_user_notification_id_notification_type" UNIQUE ("notification_id", "notification_type"),
+
   -- When is_deleted is true, then we should not have name
   CONSTRAINT "check_user_is_deleted_name"
     CHECK (NOT ("is_deleted" = 't' AND "name" IS NOT NULL))
